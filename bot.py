@@ -122,7 +122,7 @@ async def stream_vc(client, message):
             FINAL_URL = yt_video_search(INPUT_SOURCE)
             if FINAL_URL == 404:
                 return await msg.edit("__No videos found__ 🤷‍♂️")
-        await msg.edit("📥 __Downloading...__")
+        await msg.edit("📥 __𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠.....__")
         LOCAL_FILE = video_link_getter(FINAL_URL, key="v")
         if LOCAL_FILE == 500: return await msg.edit("__Download Error.__ 🤷‍♂️")
          
@@ -130,7 +130,7 @@ async def stream_vc(client, message):
         group_call = group_call_factory.get_group_call()
         if group_call.is_connected: await group_call.stop()
         await group_call.join(CHAT_ID)
-        await msg.edit("🚩 __Playing...__")
+        await msg.edit(" __𝐏𝐥𝐚𝐲𝐢𝐧𝐠.....__")
         await group_call.start_video(LOCAL_FILE, repeat=False)
         VIDEO_CALL[CHAT_ID] = group_call
     except Exception as e:
