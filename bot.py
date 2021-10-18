@@ -1,6 +1,6 @@
 '''
-VoiceChatStreamer, An Telegram Bot Project
-Copyright (c) 2021 Anjana Madu <https://github.com/AnjanaMadu>
+VC-Streamer, An Telegram Bot Project
+Copyright (c) 2021 ρяє∂αтσя <https://github.com/PredatorHackerzZ>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
@@ -75,29 +75,29 @@ async def leave_vc(client, message):
 async def play_vc(client, message):
     CHAT_ID = message.chat.id
     if not str(CHAT_ID).startswith("-100"): return
-    msg = await message.reply("⏳ __Please wait.__")
+    msg = await message.reply("⏳ __𝐏𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭.__")
     media = message.reply_to_message
     if media:
-        await msg.edit("📥 __Downloading...__")
+        await msg.edit("📥 __𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠...__")
         LOCAL_FILE = await client.download_media(media)
     else:
         try: INPUT_SOURCE = message.text.split(" ", 1)[1]
-        except IndexError: return await msg.edit("🔎 __Give me a URL or Search Query. Look__ `!help`")
+        except IndexError: return await msg.edit("🔎 __𝐆𝐢𝐯𝐞 𝐦𝐞 𝐚 𝐔𝐑𝐋 𝐨𝐫 𝐒𝐞𝐚𝐫𝐜𝐡 𝐐𝐮𝐞𝐫𝐲. 𝐋𝐨𝐨𝐤__ `!help`")
         if ("youtube.com" in INPUT_SOURCE) or ("youtu.be" in INPUT_SOURCE):
             FINAL_URL = INPUT_SOURCE
         else:
             FINAL_URL = yt_video_search(INPUT_SOURCE)
             if FINAL_URL == 404:
-                return await msg.edit("__No videos found__ 🤷‍♂️")
-        await msg.edit("📥 __Downloading...__")
+                return await msg.edit("🎥__𝐍𝐨 𝐯𝐢𝐝𝐞𝐨𝐬 𝐟𝐨𝐮𝐧𝐝__ ❌")
+        await msg.edit("📥 __𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠...__")
         LOCAL_FILE = video_link_getter(FINAL_URL, key="a")
-        if LOCAL_FILE == 500: return await msg.edit("__Download Error.__ 🤷‍♂️")
+        if LOCAL_FILE == 500: return await msg.edit("__𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫.__ ❌")
          
     try:
         group_call = group_call_factory.get_group_call()
         if group_call.is_connected: await group_call.stop()
         await group_call.join(CHAT_ID)
-        await msg.edit("🚩 __Playing...__")
+        await msg.edit("🎶 __𝐏𝐥𝐚𝐲𝐢𝐧𝐠...__ 🎶")
         await group_call.start_audio(LOCAL_FILE, repeat=False)
         VIDEO_CALL[CHAT_ID] = group_call
     except Exception as e:
@@ -108,10 +108,10 @@ async def play_vc(client, message):
 async def stream_vc(client, message):
     CHAT_ID = message.chat.id
     if not str(CHAT_ID).startswith("-100"): return
-    msg = await message.reply("⏳ __Please wait.__")
+    msg = await message.reply("⏳ __𝐏𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭.__")
     media = message.reply_to_message
     if media:
-        await msg.edit("📥 __Downloading...__")
+        await msg.edit("📥 __𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠...__")
         LOCAL_FILE = await client.download_media(media)
     else:
         try: INPUT_SOURCE = message.text.split(" ", 1)[1]
@@ -130,7 +130,7 @@ async def stream_vc(client, message):
         group_call = group_call_factory.get_group_call()
         if group_call.is_connected: await group_call.stop()
         await group_call.join(CHAT_ID)
-        await msg.edit(" __𝐏𝐥𝐚𝐲𝐢𝐧𝐠.....__")
+        await msg.edit("🎶__𝐏𝐥𝐚𝐲𝐢𝐧𝐠.... 🎶__")
         await group_call.start_video(LOCAL_FILE, repeat=False)
         VIDEO_CALL[CHAT_ID] = group_call
     except Exception as e:
