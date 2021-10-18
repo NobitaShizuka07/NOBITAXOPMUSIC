@@ -59,7 +59,7 @@ def yt_video_search(q: str):
 
 @vcusr.on_message(filters.regex("^!help$"))
 async def help_vc(client, message):
-    text = "===== Help Menu =====\n-Play as Audio-\n!play __(reply to audio / youtube url / search query)\n\n-Play as Video-\n!stream __(reply to video / youtube url / search query)"
+    text = "===== 𝐇𝐞𝐥𝐩 𝐌𝐞𝐧𝐮 =====\n-Play 𝐚𝐬 𝐀𝐮𝐝𝐢𝐨-\n!play __(𝐫𝐞𝐩𝐥𝐲 𝐭𝐨 𝐚𝐮𝐝𝐢𝐨 / 𝐲𝐨𝐮𝐭𝐮𝐛𝐞 𝐮𝐫𝐥 / 𝐬𝐞𝐚𝐫𝐜𝐡 𝐪𝐮𝐞𝐫𝐲)\n\n-Play 𝐚𝐬 Video-\n!stream __(𝐫𝐞𝐩𝐥𝐲 𝐭𝐨 𝐯𝐢𝐝𝐞𝐨 / 𝐲𝐨𝐮𝐭𝐮𝐛𝐞 𝐮𝐫𝐥 / 𝐬𝐞𝐚𝐫𝐜𝐡 𝐪𝐮𝐞𝐫𝐲)"
     await message.reply(text)
 
 @vcusr.on_message(filters.regex("^!endvc$"))
