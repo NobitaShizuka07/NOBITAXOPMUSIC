@@ -46,6 +46,7 @@ _Note: This userbot does not leaving from vc after song or video ended. And this
 - [Youtube-DL](https://youtube-dl.org) for Youtube-DL python
 - [MarshalX](https://github.com/MarshalX/tgcalls) for pytgcalls
 
+- Thanks to [@Anjana-Ma] for docker and Some help
 
 ## 📕 License
 ```
