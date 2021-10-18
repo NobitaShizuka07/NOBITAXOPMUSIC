@@ -6,7 +6,7 @@ _This bot can stream audio or video files and urls in telegram voice chats :)_
 ![TG Channel](https://img.shields.io/badge/dynamic/json?color=red&label=channel%20@harp_tech&query=subscribers&url=https%3A%2F%2Fonline-users-api.up.railway.app%2Fcheck%3Fchat%3Dharp_tech&logo=telegram)
 ![TG Chat](https://img.shields.io/badge/dynamic/json?color=red&label=support%20@harp_chat&query=online&url=https%3A%2F%2Fonline-users-api.up.railway.app%2Fcheck%3Fchat%3Dharp_chat&logo=telegram)
 
-_🎯 Follow me and star this repo for more telegram bots._
+_🎯 Follow me and star this repo for more telegram bots._ 🎯
 
 ## 📌 Features
 - Play direct video streams.
@@ -15,14 +15,14 @@ _🎯 Follow me and star this repo for more telegram bots._
 - Telegram video/audio playing
 - Admin control
 
-## 📌 Deployment
+## 🌐 Deployment
 - Deploy to **Heroku**
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AnjanaMadu/VoiceChatStreamer)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PredatorHackerzZ/VC-Streamer)
 
 - Deploy to **Railway**
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FAnjanaMadu%2FVoiceChatStreamer&envs=API_ID%2CAPI_HASH%2CSESSION%2CADMINS%2CCHAT_ID&API_IDDesc=Your+API+ID+from+https%3A%2F%2Fmy.telegram.org&API_HASHDesc=Your+API+HASH+from+https%3A%2F%2Fmy.teleram.org&SESSIONDesc=Get+Pyrogram+string+session+from+https%3A%2F%2Freplit.com%2F%40AnjanaMadu%2FGenerateStringSession&ADMINSDesc=Add+your+telegram+ID.+%28Then+others+can%27t+use+your+bot.+Seperate+by+spaces%29&CHAT_IDDesc=Add+chat+id+where+bot+should+work.&referralCode=n3n8cH)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FPredatorHackerzZ%2FVC-Streamer&envs=API_ID%2CAPI_HASH%2CSESSION%2CADMINS%2CCHAT_ID&API_IDDesc=Your+API+ID+from+https%3A%2F%2Fmy.telegram.org&API_HASHDesc=Your+API+HASH+from+https%3A%2F%2Fmy.teleram.org&SESSIONDesc=Get+Pyrogram+string+session+from+https%3A%2F%2Freplit.com%2F%40AnjanaMadu%2FGenerateStringSession&ADMINSDesc=Add+your+telegram+ID.+%28Then+others+can%27t+use+your+bot.+Seperate+by+spaces%29&CHAT_IDDesc=Add+chat+id+where+bot+should+work.&referralCode=n3n8cH)
 
 ### 🏷 Deployment Guide
 
@@ -46,12 +46,12 @@ _Note: This bot does not leaving from vc after song or video ended. And this is 
 - What is `ADMINS`? Just fill your telegram ID.
 - What is `CHAT_ID`? Your group ID where should userbot work!
 
-## 📌 Credits
+## 👨‍💻 Credits
 - [Youtube-DL](https://youtube-dl.org) for Youtube-DL python
 - [MarshalX](https://github.com/MarshalX/tgcalls) for pytgcalls
-- [Me](https://github.com/AnjanaMadu) for this Project 🤪
 
-## 📌 License
+
+## 📕 License
 ```
 VoiceChatStreamer, An Telegram Bot Project
 Copyright (c) 2021 Anjana Madu <https://github.com/AnjanaMadu>
