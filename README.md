@@ -1,10 +1,6 @@
 # Voice Chat Streamer
-_This bot can stream audio or video files and urls in telegram voice chats :)_
+_This bot can stream audio or video files and urls in telegram voice chats :)_ 
 
-![GitHub Repo stars](https://img.shields.io/github/stars/AnjanaMadu/VoiceChatStreamer?color=green&logo=github)
-![GitHub forks](https://img.shields.io/github/forks/AnjanaMadu/VoiceChatStreamer?color=green&logo=github)
-![TG Channel](https://img.shields.io/badge/dynamic/json?color=red&label=channel%20@harp_tech&query=subscribers&url=https%3A%2F%2Fonline-users-api.up.railway.app%2Fcheck%3Fchat%3Dharp_tech&logo=telegram)
-![TG Chat](https://img.shields.io/badge/dynamic/json?color=red&label=support%20@harp_chat&query=online&url=https%3A%2F%2Fonline-users-api.up.railway.app%2Fcheck%3Fchat%3Dharp_chat&logo=telegram)
 
 _🎯 Follow me and star this repo for more telegram bots._ 🎯
 
@@ -22,11 +18,11 @@ _🎯 Follow me and star this repo for more telegram bots._ 🎯
 
 - Deploy to **Railway**
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FPredatorHackerzZ%2FVC-Streamer&envs=API_ID%2CAPI_HASH%2CSESSION%2CADMINS%2CCHAT_ID&API_IDDesc=Your+API+ID+from+https%3A%2F%2Fmy.telegram.org&API_HASHDesc=Your+API+HASH+from+https%3A%2F%2Fmy.teleram.org&SESSIONDesc=Get+Pyrogram+string+session+from+https%3A%2F%2Freplit.com%2F%40AnjanaMadu%2FGenerateStringSession&ADMINSDesc=Add+your+telegram+ID.+%28Then+others+can%27t+use+your+bot.+Seperate+by+spaces%29&CHAT_IDDesc=Add+chat+id+where+bot+should+work.&referralCode=n3n8cH)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/PredatorHackerzZ/VC-Streamer) 
 
 ### 🏷 Deployment Guide
 
-_Note: This bot does not leaving from vc after song or video ended. And this is not a bot. Just a userbot. How to use? You need to add String session own's user to your group. Ok now you added userbot to your group. Then do `!help`. Now you can get help menu. Read it and Do what you want by reffering help menu. For help [@harp_chat](https://t.me/harp_chat)_
+_Note: This userbot does not leaving from vc after song or video ended. And this is not a bot. Just a userbot. How to use? You need to add String session own's user to your group. Ok now you added userbot to your group. Then do `!help`. Now you can get help menu. Read it and Do what you want by reffering help menu. For help [@𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝𝐆𝐫𝐨𝐮𝐩](https://t.me/TeleRoid14)_
 
 <details>
   <summary>How to get <code>API_ID</code> and <code>API_HASH</code></summary>
