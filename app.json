@@ -1,5 +1,5 @@
 {
-    "name": "VoiceChatStreamer",
+    "name": "VC-Streamer",
     "description": "An Telegram Bot To Stream Videos and Audios in Voice Chat",
     "stack": "container",
     "keywords": [
@@ -9,15 +9,15 @@
     ],
     "env": {
       "API_ID": {
-        "description": "Your API ID from https://my.telegram.org",
+        "description": "Your API ID from https://my.telegram.org or @ScrapperRobot",
         "required": true
       },
       "API_HASH": {
-        "description": "Your API HASH from https://my.teleram.org",
+        "description": "Your API HASH from https://my.teleram.org or @ScrapperRobot",
         "required": true
       },
       "SESSION": {
-        "description": "Get Pyrogram string session from https://replit.com/@AnjanaMadu/GenerateStringSession",
+        "description": "Get Pyrogram string session from @SessionStringRobot",
         "required": true
       },
       "ADMINS": {
